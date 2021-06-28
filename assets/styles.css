@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 3rem;
+}
+
+.slider {
+    min-height: 100vh;
+    position: relative;
+    /* background-color: aqua; */
+}
+
+.slide {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slider-options {
+    position: relative;
+}
